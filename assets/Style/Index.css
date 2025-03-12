@@ -1,0 +1,388 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../Fonts/Poppins/Poppins-Regular.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+li,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+body.Open .filter {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.623);
+  z-index: 4;
+  top: 0;
+  transition: 0.5s;
+}
+@media (min-width: 993px) {
+  body.Open .filter {
+    left: -100%;
+  }
+}
+@media (max-width: 992px) {
+  body.Open .filter {
+    left: 0;
+  }
+}
+body .mainMenu {
+  height: 100vh;
+  transition: 0.5s;
+  width: 230px;
+  padding: 20.5px 1rem;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5019607843);
+  position: relative;
+}
+body .mainMenu .logo {
+  height: 10vh;
+}
+body .mainMenu .logo .logoVr {
+  color: #9197b3;
+  font-size: 10px;
+  font-weight: 400;
+}
+body .mainMenu .logo i {
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+body .mainMenu .nav-link {
+  cursor: pointer;
+  padding: 0.8rem 0;
+  border-radius: 8px;
+}
+body .mainMenu .nav-link:hover, body .mainMenu .nav-link.active {
+  background-color: #5932ea;
+}
+body .mainMenu .nav-link:hover p, body .mainMenu .nav-link.active p {
+  color: white;
+}
+body .mainMenu .nav-link:hover img, body .mainMenu .nav-link.active img {
+  filter: brightness(0) saturate(100%) invert(100%);
+}
+body .mainMenu .nav-link p {
+  color: #9197b3;
+}
+@media (min-width: 992px) {
+  body .mainMenu .nav-link p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991.86px) and (min-width: 768px) {
+  body .mainMenu .nav-link p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  body .mainMenu .nav-link p {
+    font-size: 10px;
+  }
+}
+body .mainMenu.sideMenu .logo .logo-sm {
+  display: none;
+}
+body .mainMenu.sideMenu .pro {
+  width: 210px;
+  height: 150px;
+  border-radius: 20px;
+  background: linear-gradient(107.91deg, #eaabf0 7.37%, #4623e9 95.19%);
+  position: absolute;
+  bottom: 3%;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+body .mainMenu.sideMenu .pro p {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  width: 180px;
+}
+body .mainMenu.sideMenu .pro button {
+  width: 180px;
+  border: 0;
+  border-radius: 20px;
+  height: 40px;
+  color: #5932ea;
+  font-size: 14px;
+  font-weight: 600;
+}
+@media (max-width: 992px) {
+  body .mainMenu.sideMenu {
+    position: fixed;
+    left: 0;
+    z-index: 5;
+  }
+}
+body .mainMenu.sideMenuClose {
+  width: 70px;
+  overflow: hidden;
+}
+body .mainMenu.sideMenuClose .pro {
+  display: none;
+}
+body .mainMenu.sideMenuClose .arrow {
+  display: none;
+}
+body .mainMenu.sideMenuClose .oneItem p {
+  display: none;
+}
+body .mainMenu.sideMenuClose .logo .logo-lg {
+  display: none;
+}
+@media (max-width: 992px) {
+  body .mainMenu.sideMenuClose {
+    position: fixed;
+    left: -100%;
+  }
+}
+body .navIcon {
+  cursor: pointer;
+}
+body .rightPart {
+  transition: 0.5s;
+  background-color: #fafbff;
+  height: 100vh;
+  overflow-y: auto;
+}
+body .rightPart .topHeader {
+  height: 10vh;
+}
+body .rightPart .topHeader p {
+  font-size: 24px;
+}
+body .rightPart .topHeader .inputCon input {
+  border-radius: 12px !important;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5019607843);
+  padding-left: 2.5rem;
+  border: 0;
+}
+body .rightPart .topHeader .inputCon img {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 5%;
+  transform: translateY(-50%);
+}
+body .rightPart .stats {
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5019607843);
+  border-radius: 30px;
+}
+body .rightPart .stats .h-line {
+  width: 1px;
+  background-color: #f0f0f0;
+}
+body .rightPart .stats .title {
+  color: #9197b3;
+  font-size: 14px;
+  font-weight: 400;
+}
+body .rightPart .stats .number {
+  color: #333333;
+  font-size: 32px;
+  font-weight: 600;
+}
+body .rightPart .stats .duration {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 400;
+}
+body .rightPart .stats .duration span {
+  color: #00ac4f;
+}
+body .rightPart .stats .duration2 {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 400;
+}
+body .rightPart .stats .duration2 span {
+  color: #d0004b;
+}
+body .rightPart .stats .user {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+body .rightPart .stats .user.userImg {
+  margin-left: -10px;
+}
+body .rightPart .stats .imgCon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(201.18deg, #d3ffe7 3.14%, #effff6 86.04%);
+}
+body .rightPart .allCustomers {
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5019607843);
+  border-radius: 30px;
+}
+@media (min-width: 992px) {
+  body .rightPart .allCustomers .header .count {
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 992px) {
+  body .rightPart .allCustomers .header .count {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 992px) {
+  body .rightPart .allCustomers .header .status {
+    color: #00ac4f;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 992px) {
+  body .rightPart .allCustomers .header .status {
+    color: #00ac4f;
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
+body .rightPart .allCustomers .header .inputCon input {
+  border-radius: 10px;
+  background-color: #f9fbff;
+  padding-left: 2.5rem;
+  border: 0;
+}
+body .rightPart .allCustomers .header .inputCon input:focus {
+  box-shadow: 0 0 0;
+}
+body .rightPart .allCustomers .header .inputCon img {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 5%;
+  transform: translateY(-50%);
+}
+body .rightPart .allCustomers .header select {
+  background-color: #f9fbff;
+  border: 0;
+  color: #7e7e7e;
+  font-size: 12px;
+}
+body .rightPart .allCustomers .header select:focus {
+  box-shadow: 0 0 0;
+}
+body .rightPart .allCustomers .table-container {
+  margin: 20px auto;
+  overflow-y: auto;
+  max-height: 290px;
+}
+body .rightPart .allCustomers .table-container .active,
+body .rightPart .allCustomers .table-container .inactive {
+  border-radius: 4px;
+  border: 1px solid;
+  font-size: 14px;
+  font-weight: 500;
+  width: 80px;
+  height: 30px;
+}
+body .rightPart .allCustomers .table-container .active {
+  background-color: rgba(22, 192, 152, 0.3803921569);
+  border-color: #00b087;
+  color: #00b087;
+}
+body .rightPart .allCustomers .table-container .inactive {
+  background-color: #ffc5c5;
+  border-color: #df0404;
+  color: #df0404;
+}
+body .rightPart .allCustomers .table-container table {
+  width: 100%;
+}
+body .rightPart .allCustomers .table-container table thead tr {
+  color: #b5b7c0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+body .rightPart .allCustomers .table-container table td {
+  color: #292d32;
+  font-size: 14px;
+  font-weight: 500;
+}
+body .rightPart .allCustomers .table-container table th {
+  color: #b5b7c0;
+  font-size: 14px;
+  font-weight: 500;
+}
+body .rightPart .allCustomers .table-container table th,
+body .rightPart .allCustomers .table-container table td {
+  padding: 8px;
+  border-bottom: 1px solid #eeeeee;
+}
+body .rightPart .allCustomers .show {
+  color: #9197b3;
+  font-size: 14px;
+  font-weight: 400;
+}
+body .rightPart .allCustomers .pagination li a {
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: #f5f5f5;
+  color: #404b52;
+  font-size: 12px;
+  font-weight: 500;
+}
+body .rightPart .allCustomers .pagination li.active a {
+  background-color: #5932ea;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+@media (min-width: 993px) {
+  body .rightPart.sideNavOpen {
+    width: calc(100% - 230px);
+  }
+}
+@media (max-width: 992px) {
+  body .rightPart.sideNavOpen {
+    width: 100%;
+  }
+}
+@media (min-width: 993px) {
+  body .rightPart.sideNavClose {
+    width: calc(100% - 70px);
+  }
+}
+@media (max-width: 992px) {
+  body .rightPart.sideNavClose {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Index.css.map */
