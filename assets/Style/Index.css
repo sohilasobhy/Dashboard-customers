@@ -1,6 +1,47 @@
 @font-face {
   font-family: "Poppins";
+  src: url("../Fonts/Poppins/Poppins-Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../Fonts/Poppins/Poppins-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../Fonts/Poppins/Poppins-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Poppins";
   src: url("../Fonts/Poppins/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../Fonts/Poppins/Poppins-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../Fonts/Poppins/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../Fonts/Poppins/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../Fonts/Poppins/Poppins-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../Fonts/Poppins/Poppins-Black.ttf");
+  font-weight: 900;
 }
 * {
   padding: 0;
@@ -45,15 +86,20 @@ body.Open .filter {
   }
 }
 body .mainMenu {
+  display: flex;
   height: 100vh;
   transition: 0.5s;
-  width: 230px;
+  width: 300px;
   padding: 20.5px 1rem;
   box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5019607843);
-  position: relative;
 }
 body .mainMenu .logo {
   height: 10vh;
+  justify-content: space-between;
+}
+body .mainMenu .logo .logo-lg {
+  display: flex;
+  align-items: flex-end;
 }
 body .mainMenu .logo .logoVr {
   color: #9197b3;
@@ -105,14 +151,12 @@ body .mainMenu.sideMenu .pro {
   height: 150px;
   border-radius: 20px;
   background: linear-gradient(107.91deg, #eaabf0 7.37%, #4623e9 95.19%);
-  position: absolute;
-  bottom: 3%;
-  right: 50%;
-  transform: translateX(50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-self: flex-end;
+  align-self: center;
   gap: 1rem;
 }
 body .mainMenu.sideMenu .pro p {
@@ -138,8 +182,14 @@ body .mainMenu.sideMenu .pro button {
   }
 }
 body .mainMenu.sideMenuClose {
-  width: 70px;
+  width: 80px;
   overflow: hidden;
+}
+body .mainMenu.sideMenuClose .nav-link div {
+  margin: auto;
+}
+body .mainMenu.sideMenuClose .navIcon {
+  justify-content: center;
 }
 body .mainMenu.sideMenuClose .pro {
   display: none;
@@ -179,6 +229,12 @@ body .rightPart .topHeader .inputCon input {
   box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5019607843);
   padding-left: 2.5rem;
   border: 0;
+}
+body .rightPart .topHeader .inputCon input::-moz-placeholder {
+  color: #b5b7c0;
+}
+body .rightPart .topHeader .inputCon input::placeholder {
+  color: #b5b7c0;
 }
 body .rightPart .topHeader .inputCon img {
   position: absolute;
@@ -228,7 +284,16 @@ body .rightPart .stats .user {
   border-radius: 50%;
   border: 2px solid white;
 }
-body .rightPart .stats .user.userImg {
+body .rightPart .stats .user:nth-child(2) {
+  margin-left: -10px;
+}
+body .rightPart .stats .user:nth-child(3) {
+  margin-left: -10px;
+}
+body .rightPart .stats .user:nth-child(4) {
+  margin-left: -10px;
+}
+body .rightPart .stats .user:nth-child(5) {
   margin-left: -10px;
 }
 body .rightPart .stats .imgCon {
@@ -236,6 +301,17 @@ body .rightPart .stats .imgCon {
   height: 80px;
   border-radius: 50%;
   background: linear-gradient(201.18deg, #d3ffe7 3.14%, #effff6 86.04%);
+}
+@media (min-width: 768px) {
+  body .rightPart .stats {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body .rightPart .stats {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 body .rightPart .allCustomers {
   box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5019607843);
@@ -275,6 +351,12 @@ body .rightPart .allCustomers .header .inputCon input {
   padding-left: 2.5rem;
   border: 0;
 }
+body .rightPart .allCustomers .header .inputCon input::-moz-placeholder {
+  color: #b5b7c0;
+}
+body .rightPart .allCustomers .header .inputCon input::placeholder {
+  color: #b5b7c0;
+}
 body .rightPart .allCustomers .header .inputCon input:focus {
   box-shadow: 0 0 0;
 }
@@ -289,8 +371,10 @@ body .rightPart .allCustomers .header .inputCon img {
 body .rightPart .allCustomers .header select {
   background-color: #f9fbff;
   border: 0;
+  border-radius: 10px;
   color: #7e7e7e;
   font-size: 12px;
+  padding: 0.5rem 2.25rem 0.5rem 0.75rem;
 }
 body .rightPart .allCustomers .header select:focus {
   box-shadow: 0 0 0;
@@ -298,7 +382,7 @@ body .rightPart .allCustomers .header select:focus {
 body .rightPart .allCustomers .table-container {
   margin: 20px auto;
   overflow-y: auto;
-  max-height: 290px;
+  max-height: 240px;
 }
 body .rightPart .allCustomers .table-container .active,
 body .rightPart .allCustomers .table-container .inactive {
@@ -308,6 +392,9 @@ body .rightPart .allCustomers .table-container .inactive {
   font-weight: 500;
   width: 80px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .rightPart .allCustomers .table-container .active {
   background-color: rgba(22, 192, 152, 0.3803921569);
@@ -359,6 +446,7 @@ body .rightPart .allCustomers .pagination li a {
   color: #404b52;
   font-size: 12px;
   font-weight: 500;
+  border-radius: 4px;
 }
 body .rightPart .allCustomers .pagination li.active a {
   background-color: #5932ea;

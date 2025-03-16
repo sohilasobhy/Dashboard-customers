@@ -14,422 +14,441 @@
     <link rel="stylesheet" href="assets/Style/Index.css" />
     <title>Dashboard</title>
   </head>
-  <body class="d-flex">
-    <div class="filter d-lg-none d-block"></div>
-    <div class="mainMenu sideMenu pt-0 bg-white" id="mainMenu">
+  <body>
+    <div class="d-flex">
+      <div class="filter d-lg-none d-block"></div>
       <div
-        class="d-flex justify-content-lg-start justify-content-between logo align-items-center navIcon"
+        class="mainMenu sideMenu pt-0 bg-white flex-column justify-content-between"
+        id="mainMenu"
       >
-        <div class="d-flex align-items-end w-75">
-          <img
-            src="assets/Images/Group 31.svg"
-            alt="logo"
-            class="logo-lg img-fluid"
-          />
-          <p class="logo-lg logoVr mb-1">v.01</p>
-        </div>
-        <i class="bi bi-x-lg d-lg-none" id="closeBtn"></i>
-        <img
-          src="assets/Images/setting 1.svg"
-          alt="logo"
-          class="logo-sm img-fluid"
-        />
-      </div>
-      <nav class="navbar navbar-expand flex-wrap menuItems pt-0">
-        <div class="container-fluid flex-column p-0">
-          <div
-            class="collapse navbar-collapse flex-column align-items-between w-100"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav flex-column w-100">
-              <li class="nav-item">
-                <div
-                  class="nav-link d-flex align-items-center justify-content-between oneItem"
-                  aria-current="page"
-                  href="#"
-                >
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="assets/Images/key-square.svg"
-                      alt="Dashboard icon"
-                    />
-                    <p>DASHBOARD</p>
-                  </div>
-                  <img
-                    src="assets/Images/chevron-right 2.svg"
-                    alt="arrow icon"
-                    class="arrow"
-                  />
-                </div>
-              </li>
-              <li class="nav-item mt-3">
-                <div
-                  class="nav-link d-flex align-items-center justify-content-between oneItem"
-                >
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="assets/Images/3d-square 1.svg"
-                      alt="Product icon"
-                    />
-                    <p>Product</p>
-                  </div>
-                  <img
-                    src="assets/Images/chevron-right 2.svg"
-                    alt="arrow icon"
-                    class="arrow"
-                  />
-                </div>
-              </li>
-              <li class="nav-item mt-3">
-                <div
-                  class="nav-link active d-flex align-items-center justify-content-between oneItem"
-                >
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="assets/Images/user-square 1.svg"
-                      alt="user icon"
-                    />
-                    <p>Customers</p>
-                  </div>
-                  <img
-                    src="assets/Images/chevron-right 2.svg"
-                    alt="arrow icon"
-                    class="arrow"
-                  />
-                </div>
-              </li>
-              <li class="nav-item mt-3">
-                <div
-                  class="nav-link d-flex align-items-center justify-content-between oneItem"
-                >
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="assets/Images/wallet-money 2.svg"
-                      alt="income icon"
-                    />
-                    <p>Income</p>
-                  </div>
-                  <img
-                    src="assets/Images/chevron-right 2.svg"
-                    alt="arrow icon"
-                    class="arrow"
-                  />
-                </div>
-              </li>
-              <li class="nav-item mt-3">
-                <div
-                  class="nav-link d-flex align-items-center justify-content-between oneItem"
-                >
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="assets/Images/discount-shape 1.svg"
-                      alt="promote icon"
-                    />
-                    <p>Promote</p>
-                  </div>
-                  <img
-                    src="assets/Images/chevron-right 2.svg"
-                    alt="arrow icon"
-                    class="arrow"
-                  />
-                </div>
-              </li>
-              <li class="nav-item mt-3">
-                <div
-                  class="nav-link d-flex align-items-center justify-content-between oneItem"
-                >
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="assets/Images/message-question 1.svg"
-                      alt="help icon"
-                    />
-                    <p>Help</p>
-                  </div>
-                  <img
-                    src="assets/Images/chevron-right 2.svg"
-                    alt="arrow icon"
-                    class="arrow"
-                  />
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="pro">
-        <p class="text-center">Upgrade to PRO to get access all Features!</p>
-        <button>Get Pro Now!</button>
-      </div>
-    </div>
-    <div class="rightPart sideNavOpen px-3" id="rightPart">
-      <div class="topHeader d-flex align-items-center justify-content-between">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="13"
-          viewBox="0 0 18 13"
-          fill="none"
-          class="navIcon"
-          id="menuBtn"
-        >
-          <path
-            d="M0.75 0.5625H17.25V1.9375H0.75V0.5625ZM0.75 6.0625H17.25V7.4375H0.75V6.0625ZM0.75 11.5625H17.25V12.9375H0.75V11.5625Z"
-            fill="#778CA2"
-          />
-        </svg>
-        <p class="d-md-block d-none">Hello Evano 👋🏼,</p>
-        <div class="position-relative inputCon">
-          <input type="search" class="form-control" placeholder="Search" />
-          <img src="assets/Images/search 1.svg" alt="search icon" />
-        </div>
-      </div>
-      <div
-        class="stats mt-1 bg-white p-4 d-flex flex-md-row flex-column gap-2 justify-content-md-between justify-content-center"
-      >
-        <div
-          class="d-flex align-items-center justify-content-center gap-3 oneStat"
-        >
-          <div class="imgCon d-flex justify-content-center align-items-center">
+        <div>
+          <div class="d-flex logo align-items-center navIcon">
+            <div class="w-75 logo-lg">
+              <img
+                src="assets/Images/Group 31.svg"
+                alt="logo"
+                class="img-fluid"
+              />
+              <p class="logo-lg logoVr mb-1">v.01</p>
+            </div>
+            <i class="bi bi-x-lg d-lg-none" id="closeBtn"></i>
             <img
-              src="assets/Images/user.svg"
-              alt="user icon"
-              class="img-fluid"
+              src="assets/Images/setting 1.svg"
+              alt="logo"
+              class="logo-sm img-fluid"
             />
           </div>
-          <div>
-            <p class="title">Total Customers</p>
-            <p class="number">5,423</p>
-            <div class="d-flex align-items-center">
-              <img src="assets/Images/arrow-up 1.svg" alt="arrow-up" />
-              <p class="ms-1 duration"><span>16%</span> this month</p>
+          <nav class="navbar navbar-expand flex-wrap menuItems pt-0">
+            <div class="container-fluid flex-column p-0">
+              <div
+                class="collapse navbar-collapse flex-column align-items-between w-100"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav flex-column w-100">
+                  <li class="nav-item">
+                    <div
+                      class="nav-link d-flex align-items-center justify-content-between oneItem"
+                      aria-current="page"
+                      href="#"
+                    >
+                      <div class="d-flex align-items-center gap-3">
+                        <img
+                          src="assets/Images/key-square.svg"
+                          alt="Dashboard icon"
+                        />
+                        <p>DASHBOARD</p>
+                      </div>
+                      <img
+                        src="assets/Images/chevron-right 2.svg"
+                        alt="arrow icon"
+                        class="arrow"
+                      />
+                    </div>
+                  </li>
+                  <li class="nav-item mt-3">
+                    <div
+                      class="nav-link d-flex align-items-center justify-content-between oneItem"
+                    >
+                      <div class="d-flex align-items-center gap-3">
+                        <img
+                          src="assets/Images/3d-square 1.svg"
+                          alt="Product icon"
+                        />
+                        <p>Product</p>
+                      </div>
+                      <img
+                        src="assets/Images/chevron-right 2.svg"
+                        alt="arrow icon"
+                        class="arrow"
+                      />
+                    </div>
+                  </li>
+                  <li class="nav-item mt-3">
+                    <div
+                      class="nav-link active d-flex align-items-center justify-content-between oneItem"
+                    >
+                      <div class="d-flex align-items-center gap-3">
+                        <img
+                          src="assets/Images/user-square 1.svg"
+                          alt="user icon"
+                        />
+                        <p>Customers</p>
+                      </div>
+                      <img
+                        src="assets/Images/chevron-right 2.svg"
+                        alt="arrow icon"
+                        class="arrow"
+                      />
+                    </div>
+                  </li>
+                  <li class="nav-item mt-3">
+                    <div
+                      class="nav-link d-flex align-items-center justify-content-between oneItem"
+                    >
+                      <div class="d-flex align-items-center gap-3">
+                        <img
+                          src="assets/Images/wallet-money 2.svg"
+                          alt="income icon"
+                        />
+                        <p>Income</p>
+                      </div>
+                      <img
+                        src="assets/Images/chevron-right 2.svg"
+                        alt="arrow icon"
+                        class="arrow"
+                      />
+                    </div>
+                  </li>
+                  <li class="nav-item mt-3">
+                    <div
+                      class="nav-link d-flex align-items-center justify-content-between oneItem"
+                    >
+                      <div class="d-flex align-items-center gap-3">
+                        <img
+                          src="assets/Images/discount-shape 1.svg"
+                          alt="promote icon"
+                        />
+                        <p>Promote</p>
+                      </div>
+                      <img
+                        src="assets/Images/chevron-right 2.svg"
+                        alt="arrow icon"
+                        class="arrow"
+                      />
+                    </div>
+                  </li>
+                  <li class="nav-item mt-3">
+                    <div
+                      class="nav-link d-flex align-items-center justify-content-between oneItem"
+                    >
+                      <div class="d-flex align-items-center gap-3">
+                        <img
+                          src="assets/Images/message-question 1.svg"
+                          alt="help icon"
+                        />
+                        <p>Help</p>
+                      </div>
+                      <img
+                        src="assets/Images/chevron-right 2.svg"
+                        alt="arrow icon"
+                        class="arrow"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="h-line"></div>
-        <div
-          class="d-flex align-items-center justify-content-center gap-3 oneStat"
-        >
-          <div class="imgCon d-flex justify-content-center align-items-center">
-            <img
-              src="assets/Images/profile-tick.svg"
-              alt="members icon"
-              class="img-fluid"
-            />
-          </div>
-          <div>
-            <p class="title">Members</p>
-            <p class="number">1,893</p>
-            <div class="d-flex align-items-center">
-              <img src="assets/Images/arrow-down1.svg" alt="arrow-down" />
-              <p class="ms-1 duration2"><span>1%</span> this month</p>
-            </div>
-          </div>
-        </div>
-        <div class="h-line"></div>
-        <div class="d-flex align-items-center justify-content-center gap-3">
-          <div class="imgCon d-flex justify-content-center align-items-center">
-            <img
-              src="assets/Images/monitor.svg"
-              alt="monitor icon"
-              class="img-fluid"
-            />
-          </div>
-          <div>
-            <p class="title">Active Now</p>
-            <p class="number">189</p>
-            <div class="d-flex align-items-center">
-              <img
-                src="assets/Images/f9953449a469d519cab6d0aed5e02023.png"
-                class="user"
-                alt="user"
-              />
-              <img
-                src="assets/Images/f608b1d5690d7ec662fed11cb629f12f.png"
-                class="userImg user"
-                alt="user"
-              />
-              <img
-                src="assets/Images/9f301eeb05909330a86655a0825d815b.png"
-                class="userImg user"
-                alt="user"
-              />
-              <img
-                src="assets/Images/74441983aebe2f1293d1cfc74e01f3f6.png"
-                class="userImg user"
-                alt="user"
-              />
-              <img
-                src="assets/Images/780fa57e3e657fcf2fb4c9c4744320bf.png"
-                class="userImg user"
-                alt="user"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="allCustomers mt-3 bg-white p-4">
-        <div class="header d-flex align-items-center justify-content-between">
-          <div>
-            <p class="count">All Customers</p>
-            <p class="status">Active Members</p>
-          </div>
-          <div class="d-flex align-items-center gap-2">
-            <div class="position-relative inputCon d-md-block d-none">
-              <input type="search" class="form-control" placeholder="Search" />
-              <img src="assets/Images/search 1.svg" alt="search icon" />
-            </div>
-            <select class="form-select w-auto">
-              <option>Sort by: <span>Newest</span></option>
-              <option>Sort by: <span>Oldest</span></option>
-            </select>
-          </div>
-        </div>
-        <div class="table-container table-responsive">
-          <table class="table table-borderless">
-            <thead>
-              <tr>
-                <th style="width: 15%; min-width: 150px">Customer Name</th>
-                <th style="width: 10%; min-width: 100px">Company</th>
-                <th style="width: 20%; min-width: 150px">Phone Number</th>
-                <th style="width: 20%; min-width: 200px">Email</th>
-                <th style="width: 20%; min-width: 100px">Country</th>
-                <th style="width: 5%; min-width: 80px">Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Jane Cooper</td>
-                <td>Microsoft</td>
-                <td>(225) 555-0118</td>
-                <td>jane@microsoft.com</td>
-                <td>United States</td>
-                <td><button class="active">Active</button></td>
-              </tr>
-              <tr>
-                <td>Floyd Miles</td>
-                <td>Yahoo</td>
-                <td>(205) 555-0100</td>
-                <td>floyd@yahoo.com</td>
-                <td>Kiribati</td>
-                <td><button class="inactive">Inactive</button></td>
-              </tr>
-              <tr>
-                <td>Ronald Richards</td>
-                <td>Adobe</td>
-                <td>(302) 555-0107</td>
-                <td>ronald@adobe.com</td>
-                <td>Israel</td>
-                <td><button class="inactive">Inactive</button></td>
-              </tr>
-              <tr>
-                <td>Marvin McKinney</td>
-                <td>Tesla</td>
-                <td>(252) 555-0126</td>
-                <td>marvin@tesla.com</td>
-                <td>Iran</td>
-                <td><button class="active">Active</button></td>
-              </tr>
-              <tr>
-                <td>Jane Cooper</td>
-                <td>Microsoft</td>
-                <td>(225) 555-0118</td>
-                <td>jane@microsoft.com</td>
-                <td>United States</td>
-                <td><button class="active">Active</button></td>
-              </tr>
-              <tr>
-                <td>Floyd Miles</td>
-                <td>Yahoo</td>
-                <td>(205) 555-0100</td>
-                <td>floyd@yahoo.com</td>
-                <td>Kiribati</td>
-                <td><button class="inactive">Inactive</button></td>
-              </tr>
-              <tr>
-                <td>Ronald Richards</td>
-                <td>Adobe</td>
-                <td>(302) 555-0107</td>
-                <td>ronald@adobe.com</td>
-                <td>Israel</td>
-                <td><button class="inactive">Inactive</button></td>
-              </tr>
-              <tr>
-                <td>Marvin McKinney</td>
-                <td>Tesla</td>
-                <td>(252) 555-0126</td>
-                <td>marvin@tesla.com</td>
-                <td>Iran</td>
-                <td><button class="active">Active</button></td>
-              </tr>
-              <tr>
-                <td>Jane Cooper</td>
-                <td>Microsoft</td>
-                <td>(225) 555-0118</td>
-                <td>jane@microsoft.com</td>
-                <td>United States</td>
-                <td><button class="active">Active</button></td>
-              </tr>
-              <tr>
-                <td>Floyd Miles</td>
-                <td>Yahoo</td>
-                <td>(205) 555-0100</td>
-                <td>floyd@yahoo.com</td>
-                <td>Kiribati</td>
-                <td><button class="inactive">Inactive</button></td>
-              </tr>
-              <tr>
-                <td>Ronald Richards</td>
-                <td>Adobe</td>
-                <td>(302) 555-0107</td>
-                <td>ronald@adobe.com</td>
-                <td>Israel</td>
-                <td><button class="inactive">Inactive</button></td>
-              </tr>
-              <tr>
-                <td>Marvin McKinney</td>
-                <td>Tesla</td>
-                <td>(252) 555-0126</td>
-                <td>marvin@tesla.com</td>
-                <td>Iran</td>
-                <td><button class="active">Active</button></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div
-          class="d-flex flex-md-row flex-column justify-content-md-between justify-content-center gap-md-0 gap-2"
-        >
-          <p class="show text-md-start text-center">
-            Showing data 1 to 8 of 256K entries
-          </p>
-          <nav>
-            <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a class="page-link" href="#">‹</a>
-              </li>
-              <li class="page-item active">
-                <a class="page-link" href="#">1</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">3</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">4</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">...</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">40</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">›</a>
-              </li>
-            </ul>
           </nav>
+        </div>
+        <div class="pro">
+          <p class="text-center">Upgrade to PRO to get access all Features!</p>
+          <button>Get Pro Now!</button>
+        </div>
+      </div>
+      <div class="rightPart sideNavOpen px-3" id="rightPart">
+        <div
+          class="topHeader d-flex align-items-center justify-content-between"
+        >
+          <div class="d-flex align-items-center gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="13"
+              viewBox="0 0 18 13"
+              fill="none"
+              class="navIcon"
+              id="menuBtn"
+            >
+              <path
+                d="M0.75 0.5625H17.25V1.9375H0.75V0.5625ZM0.75 6.0625H17.25V7.4375H0.75V6.0625ZM0.75 11.5625H17.25V12.9375H0.75V11.5625Z"
+                fill="#778CA2"
+              />
+            </svg>
+            <p class="d-md-block d-none">Hello Evano 👋🏼,</p>
+          </div>
+          <div class="position-relative inputCon">
+            <input type="search" class="form-control" placeholder="Search" />
+            <img src="assets/Images/search 1.svg" alt="search icon" />
+          </div>
+        </div>
+        <div
+          class="stats mt-4 bg-white p-4 d-flex flex-md-row flex-column gap-2 justify-content-md-between justify-content-center align-items-start"
+        >
+          <div
+            class="d-flex align-items-center justify-content-center gap-3 oneStat"
+          >
+            <div
+              class="imgCon d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="assets/Images/user.svg"
+                alt="user icon"
+                class="img-fluid"
+              />
+            </div>
+            <div>
+              <p class="title">Total Customers</p>
+              <p class="number">5,423</p>
+              <div class="d-flex align-items-center">
+                <img src="assets/Images/arrow-up 1.svg" alt="arrow-up" />
+                <p class="ms-1 duration"><span>16%</span> this month</p>
+              </div>
+            </div>
+          </div>
+          <div class="h-line"></div>
+          <div
+            class="d-flex align-items-center justify-content-center gap-3 oneStat"
+          >
+            <div
+              class="imgCon d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="assets/Images/profile-tick.svg"
+                alt="members icon"
+                class="img-fluid"
+              />
+            </div>
+            <div>
+              <p class="title">Members</p>
+              <p class="number">1,893</p>
+              <div class="d-flex align-items-center">
+                <img src="assets/Images/arrow-down1.svg" alt="arrow-down" />
+                <p class="ms-1 duration2"><span>1%</span> this month</p>
+              </div>
+            </div>
+          </div>
+          <div class="h-line"></div>
+          <div class="d-flex align-items-center justify-content-center gap-3">
+            <div
+              class="imgCon d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="assets/Images/monitor.svg"
+                alt="monitor icon"
+                class="img-fluid"
+              />
+            </div>
+            <div>
+              <p class="title">Active Now</p>
+              <p class="number">189</p>
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/Images/f9953449a469d519cab6d0aed5e02023.png"
+                  class="user"
+                  alt="user"
+                />
+                <img
+                  src="assets/Images/f608b1d5690d7ec662fed11cb629f12f.png"
+                  class="userImg user"
+                  alt="user"
+                />
+                <img
+                  src="assets/Images/9f301eeb05909330a86655a0825d815b.png"
+                  class="userImg user"
+                  alt="user"
+                />
+                <img
+                  src="assets/Images/74441983aebe2f1293d1cfc74e01f3f6.png"
+                  class="userImg user"
+                  alt="user"
+                />
+                <img
+                  src="assets/Images/780fa57e3e657fcf2fb4c9c4744320bf.png"
+                  class="userImg user"
+                  alt="user"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="allCustomers mt-5 bg-white p-4">
+          <div class="header d-flex align-items-center justify-content-between">
+            <div>
+              <p class="count">All Customers</p>
+              <p class="status">Active Members</p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <div class="position-relative inputCon d-md-block d-none">
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Search"
+                />
+                <img src="assets/Images/search 1.svg" alt="search icon" />
+              </div>
+              <select class="form-select w-auto">
+                <option>Sort by: <span>Newest</span></option>
+                <option>Sort by: <span>Oldest</span></option>
+              </select>
+            </div>
+          </div>
+          <div class="table-container table-responsive">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th style="width: 15%; min-width: 150px">Customer Name</th>
+                  <th style="width: 10%; min-width: 100px">Company</th>
+                  <th style="width: 20%; min-width: 150px">Phone Number</th>
+                  <th style="width: 20%; min-width: 200px">Email</th>
+                  <th style="width: 20%; min-width: 100px">Country</th>
+                  <th style="width: 5%; min-width: 80px">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td><div class="active">Active</div></td>
+                </tr>
+                <tr>
+                  <td>Floyd Miles</td>
+                  <td>Yahoo</td>
+                  <td>(205) 555-0100</td>
+                  <td>floyd@yahoo.com</td>
+                  <td>Kiribati</td>
+                  <td><div class="inactive">Inactive</div></td>
+                </tr>
+                <tr>
+                  <td>Ronald Richards</td>
+                  <td>Adobe</td>
+                  <td>(302) 555-0107</td>
+                  <td>ronald@adobe.com</td>
+                  <td>Israel</td>
+                  <td><div class="inactive">Inactive</div></td>
+                </tr>
+                <tr>
+                  <td>Marvin McKinney</td>
+                  <td>Tesla</td>
+                  <td>(252) 555-0126</td>
+                  <td>marvin@tesla.com</td>
+                  <td>Iran</td>
+                  <td><div class="active">Active</div></td>
+                </tr>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td><div class="active">Active</div></td>
+                </tr>
+                <tr>
+                  <td>Floyd Miles</td>
+                  <td>Yahoo</td>
+                  <td>(205) 555-0100</td>
+                  <td>floyd@yahoo.com</td>
+                  <td>Kiribati</td>
+                  <td><div class="inactive">Inactive</div></td>
+                </tr>
+                <tr>
+                  <td>Ronald Richards</td>
+                  <td>Adobe</td>
+                  <td>(302) 555-0107</td>
+                  <td>ronald@adobe.com</td>
+                  <td>Israel</td>
+                  <td><div class="inactive">Inactive</div></td>
+                </tr>
+                <tr>
+                  <td>Marvin McKinney</td>
+                  <td>Tesla</td>
+                  <td>(252) 555-0126</td>
+                  <td>marvin@tesla.com</td>
+                  <td>Iran</td>
+                  <td><div class="active">Active</div></td>
+                </tr>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td><div class="active">Active</div></td>
+                </tr>
+                <tr>
+                  <td>Floyd Miles</td>
+                  <td>Yahoo</td>
+                  <td>(205) 555-0100</td>
+                  <td>floyd@yahoo.com</td>
+                  <td>Kiribati</td>
+                  <td><div class="inactive">Inactive</div></td>
+                </tr>
+                <tr>
+                  <td>Ronald Richards</td>
+                  <td>Adobe</td>
+                  <td>(302) 555-0107</td>
+                  <td>ronald@adobe.com</td>
+                  <td>Israel</td>
+                  <td><div class="inactive">Inactive</div></td>
+                </tr>
+                <tr>
+                  <td>Marvin McKinney</td>
+                  <td>Tesla</td>
+                  <td>(252) 555-0126</td>
+                  <td>marvin@tesla.com</td>
+                  <td>Iran</td>
+                  <td><div class="active">Active</div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="d-flex flex-md-row flex-column justify-content-md-between justify-content-center gap-md-0 gap-2"
+          >
+            <p class="show text-md-start text-center">
+              Showing data 1 to 8 of 256K entries
+            </p>
+            <nav>
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#">‹</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">...</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">40</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">›</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
